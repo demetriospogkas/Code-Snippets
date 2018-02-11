@@ -11,7 +11,7 @@
 {array}
   .slice(1, -1) // Slice array from second to second to last element
 
-// Create a new array from elements/objects of another array
+// JS - Create a new array from elements/objects of another array
 {array}.map(function(element, index){
   return element.{value}
 })
