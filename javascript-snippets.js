@@ -1,10 +1,3 @@
-// D3 - Get an HTML element's attributes
-d3.select({element})
-    .node()
-    .attributes
-    .{attribute}
-    .value
-
 // JS - Get the last element of an array
 {array}[{array}.length - 1]
 
@@ -17,3 +10,8 @@ d3.select({element})
 
 {array}
   .slice(1, -1) // Slice array from second to second to last element
+
+// Create a new array from elements/objects of another array
+{array}.map(function(element, index){
+  return element.{value}
+})
