@@ -7,4 +7,4 @@ d3.select({element})
 
 // JS - Get the last element of an array
 {array}
-  .slice(1, {array.length - 1})
+  .slice(1, {array}.length - 1)
