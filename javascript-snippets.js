@@ -15,3 +15,13 @@
 {array}.map(function(element, index){
   return element.{value}
 })
+
+// JS - Delay the execution of a function
+setTimeout(function(){
+  {function({element})}
+},{miliseconds})
+
+// JS - Repeatedly execute a function
+setInterval(function(){
+  {function({element})}
+},{miliseconds})
