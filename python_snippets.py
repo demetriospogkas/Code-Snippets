@@ -15,9 +15,12 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte ${byte} in position ${positi
 import re
 re.sub('(\d{2})/(\d{2})/(\d{4})', '\g<3>-\g<1>-\g<2>', ${a_date_string})
 
-### Pandas groupby and value_counts with three columns
+### Pandas groupby and value_counts with multiple columns
 ### Kudos: https://stackoverflow.com/questions/42998660/pandas-how-to-groupby-with-count-with-multiple-levels-on-rows
 import pandas as pd
 df = pd.DataFrame(...)
 df.groupby([${col1}, ${col2}, ${col3}]).size().unstack().stack(dropna=True).reset_index(name="Count")
 
+### Pandas sort by multiple columns with multiple different ascending values
+### Kudos: https://stackoverflow.com/questions/17141558/how-to-sort-a-dataframe-in-python-pandas-by-two-or-more-columns
+df.sort_values(by=[${col1}, ${col2}, ${col3}], ascending=[${True/False}, ${True/False}, ${True/False}], inplace=True)
