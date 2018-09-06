@@ -45,3 +45,10 @@ ax.spines['left'].set_visible(False)
 ### Tight bounding box to plot in matplotlib
 ### Kudos: https://matplotlib.org/users/tight_layout_guide.html
 plt.tight_layout(pad=0, w_pad=0, h_pad=0)
+
+### Reading-Writing files:
+with open(fname, 'r') as file:
+    data = file.read()
+    
+with open(fname, 'w') as outfile:
+    outfile.write(data)
