@@ -29,3 +29,8 @@ df.sort_values(by=[${col1}, ${col2}, ${col3}], ascending=[${True/False}, ${True/
 ### Kudos: https://stackoverflow.com/questions/21971449/how-do-i-increase-the-cell-width-of-the-jupyter-ipython-notebook-in-my-browser/34058270#34058270
 from IPython.core.display import display, HTML
 display(HTML("<style>.container { width:70% !important; }</style>"))
+
+### Hide axes in matplotlib plots
+### Kudos: https://stackoverflow.com/questions/2176424/hiding-axis-text-in-matplotlib-plots
+ax.axes.get_xaxis().set_visible(False)
+ax.axes.get_yaxis().set_visible(False)
