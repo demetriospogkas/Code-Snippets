@@ -34,3 +34,10 @@ display(HTML("<style>.container { width:70% !important; }</style>"))
 ### Kudos: https://stackoverflow.com/questions/2176424/hiding-axis-text-in-matplotlib-plots
 ax.axes.get_xaxis().set_visible(False)
 ax.axes.get_yaxis().set_visible(False)
+
+### Hide bounding box in matplotlib plots
+### Kudos: https://stackoverflow.com/questions/14908576/how-to-remove-frame-from-matplotlib-pyplot-figure-vs-matplotlib-figure-frame/28720127#28720127
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)
