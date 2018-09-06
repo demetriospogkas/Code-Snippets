@@ -41,3 +41,7 @@ ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 ax.spines['bottom'].set_visible(False)
 ax.spines['left'].set_visible(False)
+
+### Tight bounding box to plot in matplotlib
+### Kudos: https://matplotlib.org/users/tight_layout_guide.html
+plt.tight_layout(pad=0, w_pad=0, h_pad=0)
