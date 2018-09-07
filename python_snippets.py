@@ -56,3 +56,10 @@ with open(fname, 'w') as outfile:
 ### Drop rows based on conditions in pandas
 ### Kudos: https://stackoverflow.com/questions/13851535/how-to-delete-rows-from-a-pandas-dataframe-based-on-a-conditional-expression
 df.drop(df[(df.score < 50) & (df.score > 20)].index, inplace=True)
+
+### Delete a file if it exists
+### Kudos: https://stackoverflow.com/questions/10840533/most-pythonic-way-to-delete-a-file-which-may-not-exist
+try:
+    os.remove(filename)
+except OSError:
+    # do something
