@@ -52,3 +52,7 @@ with open(fname, 'r') as file:
     
 with open(fname, 'w') as outfile:
     outfile.write(data)
+
+### Drop rows based on conditions in pandas
+### Kudos: https://stackoverflow.com/questions/13851535/how-to-delete-rows-from-a-pandas-dataframe-based-on-a-conditional-expression
+df.drop(df[(df.score < 50) & (df.score > 20)].index, inplace=True)
