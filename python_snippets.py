@@ -63,3 +63,9 @@ try:
     os.remove(filename)
 except OSError:
     # do something
+
+### Print with color (works both in cli and Jupyter Notebooks)
+### Kudos: https://stackoverflow.com/questions/16816013/is-it-possible-to-print-using-different-color-in-ipythons-notebook/42551663#42551663
+### Supported colors: https://pypi.org/project/termcolor/
+from termcolor import colored
+print(colored('a_string_of_text', 'red'))
