@@ -69,3 +69,9 @@ except OSError:
 ### Supported colors: https://pypi.org/project/termcolor/
 from termcolor import colored
 print(colored('a_string_of_text', 'red'))
+
+### Locate a specific row by conditions in pandas
+df.loc[(df[${col1}] == ${str1}) & (df[${col2}].str.contains(${str2}))]
+
+### Update/Add a column for a specific row by locating using speific conditions in pandas
+df.loc[(df[${col1}] == ${val1}) & (df[${col2}].str.contains(${val2})), ${col3}] = ${val3}
