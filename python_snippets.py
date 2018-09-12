@@ -79,3 +79,7 @@ df.loc[(df[${col1}] == ${val1}) & (df[${col2}].str.contains(${val2})), ${col3}] 
 ### Get current working directory in python
 import os
 os.getcwd()
+
+### Read arguments from command line script in python
+import sys
+if (len(sys.argv) > 1 and sys.argv[1] == "${val}"):
