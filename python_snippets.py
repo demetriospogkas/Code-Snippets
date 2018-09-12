@@ -75,3 +75,7 @@ df.loc[(df[${col1}] == ${str1}) & (df[${col2}].str.contains(${str2}))]
 
 ### Update/Add a column for a specific row by locating using speific conditions in pandas
 df.loc[(df[${col1}] == ${val1}) & (df[${col2}].str.contains(${val2})), ${col3}] = ${val3}
+
+### Get current working directory in python
+import os
+os.getcwd()
