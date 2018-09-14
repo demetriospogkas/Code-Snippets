@@ -83,3 +83,7 @@ os.getcwd()
 ### Read arguments from command line script in python
 import sys
 if (len(sys.argv) > 1 and sys.argv[1] == "${val}"):
+
+### Replace group of text with re
+import re
+${str} = re.sub(" (pattern1) (pattern2)", "\g<1>\g<2>", ${str})
