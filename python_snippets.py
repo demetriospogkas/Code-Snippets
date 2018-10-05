@@ -87,3 +87,10 @@ if (len(sys.argv) > 1 and sys.argv[1] == "${val}"):
 ### Replace group of text with re
 import re
 ${str} = re.sub(" (pattern1) (pattern2)", "\g<1>\g<2>", ${str})
+
+### Pass arguments to pandas functions
+def function(row, arg1, arg2):
+    ### Do something
+
+df.apply(function, arg1=arg1, arg2=arg2, axis=1)
+
