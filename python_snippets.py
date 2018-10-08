@@ -94,3 +94,10 @@ def function(row, arg1, arg2):
 
 df.apply(function, arg1=arg1, arg2=arg2, axis=1)
 
+### Return multiple new columns to pandas df with apply
+def function(row):
+    A = # do something
+    B = # do something else
+    return pd.Series([A, B])
+
+df[['A', 'B']] = df.apply(function ,axis=1)
