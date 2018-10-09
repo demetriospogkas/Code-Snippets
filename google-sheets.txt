@@ -1,0 +1,3 @@
+Conditional formatting for range of cells based on value of adjacent cell
+Define range: B2:B10
+Define custom formula: =AND(NOT(ISBLANK($B2)), $B2<$A2)
